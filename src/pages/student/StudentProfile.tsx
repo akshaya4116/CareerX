@@ -112,8 +112,7 @@ function StudentProfile() {
         graduationYear: profile.graduationYear,
         location: profile.location,
         bio: profile.bio,
-        cgpa: profile.cgpa,
-      });
+cgpa: profile.cgpa ? Number(profile.cgpa) : undefined,      });
 
       if (result.student) {
         setProfile({

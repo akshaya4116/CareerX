@@ -362,3 +362,7 @@ export async function getCollegeCompanies() {
 ========================================================= */
 
 export { authenticatedFetch };
+// Backward-compatible auth function names
+export const signupUser = signup;
+export const loginUser = login;
+export const updateCompanyApplicationStatus = updateApplicationStatus;
